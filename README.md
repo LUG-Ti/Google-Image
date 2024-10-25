@@ -23,7 +23,7 @@ A Python-based application to download images from Google Images with a clean we
 
 1. Clone the repository
 ```bash
-git clone https://github.com/lugsociety/Google-Image.git
+git clone https://github.com/LUG-Ti/Google-Image.git
 cd google-image-downloader
 ```
 

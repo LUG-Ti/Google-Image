@@ -1,0 +1,50 @@
+name: Validate Project Structure
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.ref }}
+    
+    - name: Validate Structure
+      run: |
+        # Get the list of changed files in the push
+        changed_files=$(git diff --name-only HEAD~1 HEAD)
+
+        # Defined allowed Directories
+        username="${{ github.actor }}"
+        allowed_files="
+        ^README.md
+        ^.gitignore
+        ^LICENSE
+        ^${username}/app.py
+        ^${username}/requirements.txt
+        ^${username}/README.md
+        ^${username}/static/
+        ^${username}/static/css/
+        ^${username}/static/js/
+        ^${username}/templates/index.html
+        "
+
+        '^app.py|^requirements.txt|^README.md|^static/|^static/css/|^static/js/|^templates/index.html'
+
+        # Check if there are any dirty files outside the allowed structure
+        for file in $changed_files; do
+          if ! [[ $file =~ $allowed_files ]]; then
+            echo "Error: File $file is outside the allowed structure."
+            exit 1
+          fi
+        done
+
+    - name: Success Message
+      if: success()
+      run: echo "All changes are within allowed structure."

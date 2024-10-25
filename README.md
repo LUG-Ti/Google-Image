@@ -65,17 +65,18 @@ python app.py
 ```
 google-image-downloader/
 │
-├── app.py                 # Flask application
-├── requirements.txt       # Project dependencies
-├── README.md             # Project documentation
-│
-├── static/
-│   ├── css/             # Stylesheets
-│   ├── js/              # JavaScript files
-│   └── downloads/       # Downloaded images
-│
-└── templates/
-    └── index.html       # Main interface
+└── [GitHub Username]/
+    ├── app.py                 # Flask application
+    ├── requirements.txt       # Project dependencies
+    ├── README.md             # Project documentation
+    │
+    ├── static/
+    │   ├── css/             # Stylesheets
+    │   ├── js/              # JavaScript files
+    │   └── downloads/       # Downloaded images
+    │
+    └── templates/
+        └── index.html       # Main interface
 ```
 
 ## 💻 Development
@@ -137,4 +138,4 @@ This tool is for educational purposes only. Please review Google's terms of serv
 
 - Create an issue in this repository
 - Email: lugtu@thapar.edu
-- Project Link: https://github.com/lugsociety/Google-Image
+- Project Link: https://github.com/Linux-Users-Group-TIET/Google-Image

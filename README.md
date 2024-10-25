@@ -66,17 +66,17 @@ python app.py
 google-image-downloader/
 │
 └── [GitHub Username]/
-    ├── app.py                 # Flask application
-    ├── requirements.txt       # Project dependencies
-    ├── README.md             # Project documentation
-    │
-    ├── static/
-    │   ├── css/             # Stylesheets
-    │   ├── js/              # JavaScript files
-    │   └── downloads/       # Downloaded images
-    │
-    └── templates/
-        └── index.html       # Main interface
+     ├── app.py                 # Flask application
+     ├── requirements.txt       # Project dependencies
+     ├── README.md             # Project documentation
+     │
+     ├── static/
+     │   ├── css/             # Stylesheets
+     │   ├── js/              # JavaScript files
+     │   └── downloads/       # Downloaded images
+     │
+     └── templates/
+         └── index.html       # Main interface
 ```
 
 ## 💻 Development

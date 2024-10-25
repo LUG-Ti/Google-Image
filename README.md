@@ -15,9 +15,9 @@ A Python-based application to download images from Google Images with a clean we
 ## 🛠️ Technology Stack
 
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python with Flask
-- **Image Download**: google_images_download package
-- **Styling**: Bootstrap 5
+- **Backend**: Python with Flask/Django
+- **Image Download**: google_images_download
+- **Styling**: Bootstrap 5/Tailwind
 
 ## ⚙️ Installation
 
